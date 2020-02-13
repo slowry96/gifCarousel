@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- favicon -->
+    <link rel="icon" href="./public/parr.gif" type="image/gif" >
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- FontAwesome 5! -->
+    <script src="https://kit.fontawesome.com/74b45bac0f.js" crossorigin="anonymous"></script>
+
+    <title>Gif Carousel</title>
+
+    <style>
+        .carousel-item {
+            height: auto; 
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(113, 201, 248);">
+    <!-- Image and text -->
+    <div class="container-fluid" style="padding: 0%; background-color: rgb(29, 161, 242);">
+        <nav class="navbar navbar-light">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-play-circle"></i>
+                <em>Gif Carousel</em>
+            </a>
+        </nav>
+    </div>
+    <div class="container">
+        <!-- Liquid syntax to place content passed to layout. -->
+        <!-- ^^^^
+  this is YAML front matter that becomes our data store for key/value pairs.
+  layout is a specific keyword here that when called will look for a layout
+  template from the default location of _includes.
+
+  our layout here is indexLayout.liquid. eleventy will look for that file and
+  wrap our content here with that template.
+
+  also of note, the front matter must be the first thing in the file or it won't
+  compile correctly.
+-->
+
+<div class="container">
+  <div id="carouselId" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+          <div class="carousel-inner">
+              
+<div class="carousel-item active">
+  <div style="width:100%;padding-bottom:56%;position:relative;">
+  <iframe src="https://giphy.com/embed/l46Cpz0A0dB1jMxG0" width=100% height=100% style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+  </div><p><a href="https://giphy.com/gifs/l46Cpz0A0dB1jMxG0">via GIPHY</a></p>
+</div>
+
+
+  <div class="carousel-item">
+    <div style="width:100%;padding-bottom:56%;position:relative;">
+    <iframe src="https://giphy.com/embed/xUOwG5OCO1WbtkuDAY" width=100% height=100% style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </div><p><a href="https://giphy.com/gifs/xUOwG5OCO1WbtkuDAY">via GIPHY</a></p>
+  </div>
+
+  <div class="carousel-item">
+    <div style="width:100%;padding-bottom:56%;position:relative;">
+    <iframe src="https://giphy.com/embed/26DN133KZMLWSygow" width=100% height=100% style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </div><p><a href="https://giphy.com/gifs/26DN133KZMLWSygow">via GIPHY</a></p>
+  </div>
+
+  <div class="carousel-item">
+    <div style="width:100%;padding-bottom:56%;position:relative;">
+    <iframe src="https://giphy.com/embed/PlrRBFGD4k0X3ru7SQ" width=100% height=100% style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </div><p><a href="https://giphy.com/gifs/PlrRBFGD4k0X3ru7SQ">via GIPHY</a></p>
+  </div>
+
+
+
+          </div>
+      </div>
+  </div>
+</div>
+<a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="sr-only">Next</span>
+</a>
+
+
+    </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

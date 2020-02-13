@@ -1,0 +1,25 @@
+---
+layout: carousel
+gifBoxHeight: "100%"
+gifBoxWidth: "100%"
+welcomeGif: l46Cpz0A0dB1jMxG0
+embeds: 
+  - xUOwG5OCO1WbtkuDAY
+  - 26DN133KZMLWSygow
+  - PlrRBFGD4k0X3ru7SQ
+---
+
+<div class="carousel-item active">
+  <div style="width:100%;padding-bottom:56%;position:relative;">
+  <iframe src="https://giphy.com/embed/{{welcomeGif}}" width={{gifBoxWidth}} height={{gifBoxHeight}} style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+  </div><p><a href="https://giphy.com/gifs/{{welcomeGif}}">via GIPHY</a></p>
+</div>
+
+{% for link in embeds %}
+  <div class="carousel-item">
+    <div style="width:100%;padding-bottom:56%;position:relative;">
+    <iframe src="https://giphy.com/embed/{{link}}" width={{gifBoxWidth}} height={{gifBoxHeight}} style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </div><p><a href="https://giphy.com/gifs/{{link}}">via GIPHY</a></p>
+  </div>
+{% endfor %}
+
