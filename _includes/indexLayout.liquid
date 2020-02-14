@@ -10,8 +10,7 @@ title: Gif Carousel
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- favicon -->
-    <link rel="icon" href="./public/parr.gif" type="image/gif" >
-
+    <link rel="icon" href="../public/parr.gif" type="image/gif" >
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- FontAwesome 5! -->
@@ -22,20 +21,23 @@ title: Gif Carousel
     <style>
         .carousel-item {
             height: auto; 
-            margin-top: 10px;
+            margin-top: 10%;
         }
     </style>
 </head>
-<body style="background-color: rgb(113, 201, 248);">
+<body style="background-color: #15202b;">
     <!-- Image and text -->
-    <div class="container-fluid" style="padding: 0%; background-color: rgb(29, 161, 242);">
-        <nav class="navbar navbar-light">
-            <a class="navbar-brand" href="#">
-                <i class="fas fa-play-circle"></i>
-                <em>{{ title }}</em>
-            </a>
-        </nav>
+    <div class="container-fluid">
+        <div class="row" style="padding: 0%; background-color: rgb(29, 161, 242);">
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-play-circle"></i>
+                    <em>{{ title }}</em>
+                </a>
+            </nav>
+        </div>
     </div>
+
     <div class="container">
         <!-- Liquid syntax to place content passed to layout. -->
         {{ content }}

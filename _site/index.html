@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- favicon -->
-    <link rel="icon" href="./public/parr.gif" type="image/gif" >
-
+    <link rel="icon" href="../public/parr.gif" type="image/gif" >
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- FontAwesome 5! -->
@@ -19,20 +18,23 @@
     <style>
         .carousel-item {
             height: auto; 
-            margin-top: 10px;
+            margin-top: 10%;
         }
     </style>
 </head>
-<body style="background-color: rgb(113, 201, 248);">
+<body style="background-color: #15202b;">
     <!-- Image and text -->
-    <div class="container-fluid" style="padding: 0%; background-color: rgb(29, 161, 242);">
-        <nav class="navbar navbar-light">
-            <a class="navbar-brand" href="#">
-                <i class="fas fa-play-circle"></i>
-                <em>Gif Carousel</em>
-            </a>
-        </nav>
+    <div class="container-fluid">
+        <div class="row" style="padding: 0%; background-color: rgb(29, 161, 242);">
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-play-circle"></i>
+                    <em>Gif Carousel</em>
+                </a>
+            </nav>
+        </div>
     </div>
+
     <div class="container">
         <!-- Liquid syntax to place content passed to layout. -->
         <!-- ^^^^
@@ -46,12 +48,19 @@
   also of note, the front matter must be the first thing in the file or it won't
   compile correctly.
 -->
+<div class="row">
+  <div class="col">
+    <a class="carousel-control-prev" style="width: 20%;" href="#carouselId" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+  </div>
 
-<div class="container">
-  <div id="carouselId" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner" role="listbox">
-          <div class="carousel-inner">
-              
+  <div class="col-10">
+    <div id="carouselId" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-inner">
+                
 <div class="carousel-item active">
   <div style="width:100%;padding-bottom:56%;position:relative;">
   <iframe src="https://giphy.com/embed/l46Cpz0A0dB1jMxG0" width=100% height=100% style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
@@ -79,18 +88,18 @@
 
 
 
-          </div>
-      </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <a class="carousel-control-next" style="width: 20%;" href="#carouselId" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
 </div>
-<a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
-  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  <span class="sr-only">Previous</span>
-</a>
-<a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
-  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  <span class="sr-only">Next</span>
-</a>
 
 
     </div>
